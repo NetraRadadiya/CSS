@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --h2-font-size:36px;
+    --p--font-size:16px;
+    --line-height:1.5;
+    --text-align:center;
+    --black:black;
+    --white:white;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: "Open Sans", sans-serif;
+}
+
+img,
+svg,
+video {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1280px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.big-container {
+    margin: 0 auto;
+    max-width: 1080px;
+}
+
+.sm-container {
+    margin: 0 auto;
+    max-width: 1030px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    background-color: var(--black);
+    color: var(--white);
+    border: 2px solid white;
+    text-decoration: none;
+    text-align: var(--text-align);
+}
+
+.btn:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+p {
+   font-size:var(--p--font-size);
+    line-height: var(--line-height);
+    margin-bottom: 30px;
+}
+h2 {
+    font-size:  var(--h2-font-size);
+    line-height: var(--line-height);
+    padding-bottom: 30px;
+    text-align: var(--text-align);
+}
+
+/* header */
+.header {
+    margin: 50px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 100%;
+    max-width: 165px;
+}
+.logo img {
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    object-fit:contain;
+
+}
+
+.main-icons {
+    display: flex;
+
+}
+
+.main-icons .icons {
+    padding: 0 10px;
+}
+
+
+/* banner-section */
+.banner-section {
+    
+    margin: 65px 0;
+}
+
+.head {
+    text-align: var(--text-align);
+}
+
+.head h1 {
+    font-size: 60px;
+    line-height: 1.36;
+    margin-bottom: 30px;
+}
+
+
+/* image-section */
+.image-section {
+    margin: 60px 0;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.img-con {
+    max-width: 33.33%;
+    width: 100%;
+    padding: 0 5px;
+}
+.img-con:hover{
+    opacity: 0.6;
+}
+
+/* text-section */
+.text-section {
+    margin: 85px 0;
+}
+
+.text {
+    text-align: var(--text-align);
+}
+
+
+/* contant-section" */
+.contant-section {
+    margin: 204px 0;
+}
+
+.contant {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contant-text {
+    max-width: 50%;
+    width: 100%;
+}
+
+.contant-image {
+    max-width: 50%;
+    width: 100%;
+    padding-left: 125px;
+}
+.contant-text h2{
+    text-align: left;
+}
+
+
+
+/* mailing-section */
+.mailing-section {
+    margin: 70px 0;
+}
+
+.main_mail-contant {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main_mail-text {
+    max-width: 50%;
+    height: auto;
+    width: 100%;
+}
+
+.main_mail-input {
+    max-width: 50%;
+    height: auto;
+    width: 100%;
+    text-align: var(--text-align);
+    padding-left: 125px
+}
+
+.main_mail-input input {
+    width: 100%;
+    padding: 20px 40px;
+    background-color: var(--black);
+    color: var(--white);
+    border: 2px solid gray;
+}
+.main_mail-input input[type="submit"] {
+    margin-top: 19px;
+    display: inline-block;
+    height: 62px;
+    width: 100%;
+    max-width: 162px;
+    border-radius: 30px;
+    font-weight: bold;
+    background-color: var(--black);
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+.main_mail-input input[type="submit"]:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+
+
+/* custom-section */
+
+.custom-section {
+    margin: 69px 0;
+    background: url("../images/image-1.png") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    color: var(--black);
+    padding: 70px 0;
+    opacity: 0.8;
+    /* background-attachment: fixed; */
+}
+
+.custom-contant {
+    text-align: var(--text-align);
+}
+
+.custom-btn {
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    background-color: transparent;
+    color: var(--black);
+    border: 2px solid var(--black);
+    text-decoration: none;
+}
+
+.custom-btn:hover {
+    background-color: #77B0BD;
+}
+
+/* footer */
+.footer {
+    margin: 50px 0;
+}
+
+@media (max-width:1024px) {
+    .img-con {
+        max-width: 50%;
+        width: 100%;
+        padding: 0 5px;
+    }
+}
+
+@media  (max-width:767px) {
+    .head h1 {
+        font-size: 49px;
+    }
+    .img-con {
+        max-width: 100%;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .contant-text h2 {
+        font-size: var(--h2-font-size);
+        text-align: var(--text-align);
+    }
+
+    p {
+        font-size: var(--p--font-size);
+    }
+
+    .contant {
+        flex-direction: column;
+    }
+
+    .contant-text {
+        padding-top: 20px;
+        max-width: 100%;
+        width: 100%;
+        order: 2;
+    }
+
+    .contant-image {
+        max-width: 100%;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .main_mail-contant {
+        flex-direction: column;
+    }
+
+    .main_mail-text {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+    }
+
+    .main_mail-input {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+        padding-left: 0;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .head h1 {
+        font-size: 33px;
+    }
+
+    .img-con {
+        max-width: 100%;
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    .contant {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contant-text {
+        max-width: 100%;
+        width: 100%;
+        order: 2;
+    }
+
+    .contant-image {
+        max-width: 100%;
+        width: 100%;
+        padding: 0;
+    }
+
+    .contant-text h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+        line-height: 1.36;
+        text-align: var(--text-align);
+    }
+
+    .text-header h2 {
+        text-align: var(--text-align);
+        font-size: 33px;
+    }
+
+    .main_mail-title h2 {
+        text-align: var(--text-align);
+        font-size: 27px;
+    }
+
+    .main_mail-contant {
+        flex-direction: column;
+    }
+
+    .main_mail-text {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+    }
+
+    .main_mail-input {
+        max-width: 100%;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .custom-contant h2 {
+        font-size: 33px;
+        padding-bottom: 30px;
+    }
+}
